@@ -680,15 +680,16 @@
 
 <style>
     .selectContainer {
-        --internalPadding: 0 16px;
-        border: var(--border, 1px solid #d8dbdf);
-        border-radius: var(--borderRadius, 3px);
+        /* --internalPadding: 0 16px; */
+        /* border-radius: var(--borderRadius, 3px);
+        border-bottom: var(--border, 2px solid #DC2626);
+        border-color: var(--borderFocusColor, #DC2626); */
         box-sizing: border-box;
         height: var(--height, 42px);
         position: relative;
         display: flex;
         align-items: center;
-        padding: var(--padding, var(--internalPadding));
+        /* padding: var(--padding, var(--internalPadding)); */
         background: var(--background, #fff);
         margin: var(--margin, 0);
     }
@@ -699,7 +700,7 @@
         color: var(--inputColor, #3f4f5f);
         height: var(--height, 42px);
         line-height: var(--height, 42px);
-        padding: var(--inputPadding, var(--padding, var(--internalPadding)));
+        /* padding: var(--inputPadding, var(--padding, var(--internalPadding))); */
         width: 100%;
         background: transparent;
         font-size: var(--inputFontSize, 14px);
@@ -710,7 +711,8 @@
     }
 
     .selectContainer input::placeholder {
-        color: var(--placeholderColor, #78848f);
+        text-transform: uppercase;
+        color: var(--placeholderColor, #111827);
         opacity: var(--placeholderOpacity, 1);
     }
 
@@ -718,12 +720,14 @@
         outline: none;
     }
 
-    .selectContainer:hover {
+    /* .selectContainer:hover {
+        border-bottom: var(--border, 2px solid #16A34A);
         border-color: var(--borderHoverColor, #b2b8bf);
-    }
+    } */
 
     .selectContainer.focused {
-        border-color: var(--borderFocusColor, #006fe8);
+        border-bottom: var(--border, 2px solid #16A34A);
+        border-color: var(--borderFocusColor, #16A34A);
     }
 
     .selectContainer.disabled {
@@ -741,7 +745,7 @@
         line-height: var(--height, 42px);
         height: var(--height, 42px);
         overflow-x: hidden;
-        padding: var(--selectedItemPadding, 0 20px 0 0);
+        /* padding: var(--selectedItemPadding, 0 20px 0 0); */
     }
 
     .selectedItem:focus {
@@ -814,7 +818,7 @@
 
     .multiSelect {
         display: flex;
-        padding: var(--multiSelectPadding, 0 35px 0 16px);
+        /* padding: var(--multiSelectPadding, 0 35px 0 16px); */
         height: auto;
         flex-wrap: wrap;
         align-items: stretch;
